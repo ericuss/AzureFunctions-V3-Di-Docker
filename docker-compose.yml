@@ -7,8 +7,8 @@ services:
       context: .
       dockerfile: Lanre.Func/Dockerfile
     environment:
-    - AzureWebJobsStorage=DefaultEndpointsProtocol=https;AccountName=lanrest;AccountKey=4q98FgrDNObwPuV+GpSIuvEexQPRjS+FH6gk7Ffqj232Ulp5BF6QWmvERr1cUjknnaxX8xfqdWZA4EyZ2cFFjg==;EndpointSuffix=core.windows.net
-    - Storage=Development=DefaultEndpointsProtocol=https;AccountName=lanrest;AccountKey=4q98FgrDNObwPuV+GpSIuvEexQPRjS+FH6gk7Ffqj232Ulp5BF6QWmvERr1cUjknnaxX8xfqdWZA4EyZ2cFFjg==;EndpointSuffix=core.windows.net
+    - AzureWebJobsStorage=
+    - Storage=Development=
     - FUNCTIONS_WORKER_RUNTIME=dotnet
     ports:
     - "8080:80"
